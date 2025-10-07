@@ -1,0 +1,13 @@
+[Unit]
+Description=TS3 Music Bot
+After=network.target
+
+[Service]
+Type=simple
+User=your_user
+WorkingDirectory=/path/to/ts3_music_bot
+ExecStart=/usr/bin/python3 /path/to/ts3_music_bot/ts3_music_bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
